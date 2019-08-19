@@ -28,6 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
+    protected $table='tb_user';
     protected $redirectTo = '/home';
 
     /**
@@ -49,9 +50,9 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
-            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'name' => ['required', 'string', 'max:85'],
+            'email' => ['required', 'string', 'email', 'max:175', 'unique:users'],
+            'password' => ['required', 'string', 'min:8','max:16', 'confirmed'],
         ]);
     }
 
