@@ -1,16 +1,13 @@
 /*
  Navicat Premium Data Transfer
-
  Source Server         : laragon_usuario
  Source Server Type    : MySQL
  Source Server Version : 50724
  Source Host           : localhost:3306
  Source Schema         : db_registroasistencia
-
  Target Server Type    : MySQL
  Target Server Version : 50724
  File Encoding         : 65001
-
  Date: 19/08/2019 10:51:57
 */
 
