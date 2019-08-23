@@ -1,0 +1,17 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Alumno extends Model
+{
+    //
+    protected $table='tb_alumno';
+    protected $primaryKey='idcodigo';
+    public $incrementing = false;
+    protected $fillable=['foto','dni','appaterno',
+    'apmaterno','nombre','telefono','email','direccion'];
+    //Deshabilitamos los timestamps
+    public $timestamps=false;
+}

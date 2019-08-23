@@ -22,9 +22,9 @@
                 </li>
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mantenimiento <span class="caret"></span> </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Cursos</a></li>
+                        <li><a href="{{route('Curso.index')}}">Cursos</a></li>
                         <li><a href="#">Docentes</a></li>
-                        <li><a href="#">Alumnos</a></li>
+                        <li><a href="{{route('Alumno.index')}}">Alumnos</a></li>
                         <li class="divider"></li>
                         <li><a href="">Matricula</a></li>
                         <li><a href="">Carga Academica</a></li>
