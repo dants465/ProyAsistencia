@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class RegistroAsistencia extends Model
+class RegistroDetalle extends Model
 {
     //
-    protected $table='tb_registroasistencia';
+    protected $table='tb_registrodetalle';
     //Campos obligatorios
-    protected $fillable=['iddetalle','tema','fecha','hora'];
+    protected $fillable=['idregistro','idalumno','horallega'];
     //Deshabilitamos los timestamps
     public $timestamps=false;
 }

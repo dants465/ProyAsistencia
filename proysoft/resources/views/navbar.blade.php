@@ -10,21 +10,21 @@
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="/">Inicio</a></li>
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Proceso <span class="caret"></span> </a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Matricula</a></li>
                         <li><a href="#">Carga Academica</a></li>
                         <li class="divider"></li>
-                        <li><a href="">Registro de Asistencia</a></li>
+                        <li><a href="/RegAsistencia">Registro de Asistencia</a></li>
                         <li><a href="">Reporte de Asistencia</a></li>
                     </ul>
                 </li>
                 <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mantenimiento <span class="caret"></span> </a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{route('Curso.index')}}">Cursos</a></li>
-                        <li><a href="#">Docentes</a></li>
-                        <li><a href="{{route('Alumno.index')}}">Alumnos</a></li>
+                        <li><a href="/Curso">Cursos</a></li>
+                        <li><a href="/Docente">Docentes</a></li>
+                        <li><a href="/Alumno">Alumnos</a></li>
                         <li class="divider"></li>
                         <li><a href="">Matricula</a></li>
                         <li><a href="">Carga Academica</a></li>

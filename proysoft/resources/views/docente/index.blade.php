@@ -1,8 +1,11 @@
 @extends('base')
+@section('titulo')
+    Mantenimiento Docente
+@stop
 @section('content')
 <div class="col-sm-8">
     <h2>
-        <a href="{{route('docente.create')}}" class="btn btn-success pull-right">
+        <a href="{{route('Docente.create')}}" class="btn btn-success pull-right">
             <span class="glyphicon glyphicon-plus"></span>
         </a>
     </h2>
@@ -34,9 +37,9 @@
                 <td>{{$docente->direccion}}</td>
 
                 <td><a href="" class="btn btn-link"><span title="Ver" class="glyphicon glyphicon-"></span></a></td>
-                <td><a href="{{route('docente.edit',$docente->idcodigo)}}" title="Editar" class="btn btn-link"><span class="glyphicon glyphicon-edit"></span></a></td>
+                <td><a href="{{route('Docente.edit',$docente->idcodigo)}}" title="Editar" class="btn btn-link"><span class="glyphicon glyphicon-edit"></span></a></td>
                 <td>
-                    <form action="{{route('docente.destroy',$docente->idcodigo)}}" method="post">
+                    <form action="{{route('Docente.destroy',$docente->idcodigo)}}" method="post">
                         @csrf
                         @method('DELETE')
                         <button class="btn btn-link" title="Eliminar">

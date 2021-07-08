@@ -6,12 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Alumno extends Model
 {
-    //
     protected $table='tb_alumno';
-    protected $primaryKey='idcodigo';
+    //Campos obligatorios
     public $incrementing = false;
-    protected $fillable=['foto','dni','appaterno',
-    'apmaterno','nombre','telefono','email','direccion'];
+    protected $primaryKey='idcodigo';
+    protected $fillable=['foto','dni','appaterno','apmaterno','nombre','telefono','email','direccion'];
     //Deshabilitamos los timestamps
     public $timestamps=false;
 }

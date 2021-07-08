@@ -1,7 +1,7 @@
 @extends('base')
 @section('titulo')
     Inicio de Sesion
-@ensection
+@stop
 @section('content')
 <div class="col-md-6 col-md-offset-2">
     <div class="container">

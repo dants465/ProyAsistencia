@@ -1,14 +1,17 @@
 @extends('base')
+@section('titulo')
+    Editando Docente    
+@stop
 @section('content')
 <div class="col-sm-8">
     <h2>
         Mantenimiento del registros de Docentes
-        <a class="btn btn-info pull-right" href="{{route('docente.index')}}">
+        <a class="btn btn-info pull-right" href="{{route('Docente.index')}}">
             <span class="glyphicon glyphicon-share-alt"></span>Volver
         </a>
     </h2>   
     @foreach($Docentes as $docente) 
-    <form action="{{route('docente.update',$docente->idcodigo)}}" class="form-horizontal" method="post" enctype="multipart/form-data">
+    <form action="{{route('Docente.update',$docente->idcodigo)}}" class="form-horizontal" method="post" enctype="multipart/form-data">
         @csrf   
         @method('PUT')
         <div class="form-group">

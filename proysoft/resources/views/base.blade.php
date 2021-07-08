@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <h1 class="page-header text-center">
-                    Sistema de Registro de Asistencia
+                @yield('titulo','Sistema de Registro de Asistencia')
                 </h1>
             </div>
             @yield('content')

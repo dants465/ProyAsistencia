@@ -1,14 +1,17 @@
 @extends('base')
+@section('titulo')
+    Agregando Docente
+@stop
 @section('content')
 <div class="col-sm-8">
     <h2>
         Ingresar nuevo docente
-        <a href="{{route('docente.index')}}" class="btn btn-success pull-right">
+        <a href="{{route('Docente.index')}}" class="btn btn-success pull-right">
             <span class="glyphicon glyphicon-share-alt"></span>
         </a>
     </h2>
 
-    <form class="form-horizontal" action="{{route('docente.store')}}" method="POST" enctype="multipart/form-data">
+    <form class="form-horizontal" action="{{route('Docente.store')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <label class="control-label col-sm-2" for="idcodigo">IdCodigo :</label>

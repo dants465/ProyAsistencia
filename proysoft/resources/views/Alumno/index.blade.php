@@ -1,4 +1,7 @@
 @extends('base')
+@section('titulo')
+    Mantenimiento Docente
+@stop
 @section('content')
 <div class="col-sm-8">
     <h2>

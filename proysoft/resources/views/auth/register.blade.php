@@ -1,5 +1,7 @@
 @extends('base')
-
+@section('titulo')
+    Registrar usuario
+@stop
 @section('content')
 <div class="col-md-6 col-md-offset-2">
     <div class="container">
