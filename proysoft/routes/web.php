@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::resource('Curso','CursoController');
 Route::resource('Alumno','AlumnoController');
+Route::resource('docente',"DocenteController");
